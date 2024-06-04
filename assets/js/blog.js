@@ -19,29 +19,20 @@ function handleSubmit(event) {
     blogData.title = title;
     blogData.content = content;
 
+    // Save the blog data to localStorage
+    localStorage.setItem('blogData', JSON.stringify(blogData));
+
     // Clear the input fields
     document.getElementById('username').value = '';
     document.getElementById('title').value = '';
     document.getElementById('content').value = '';
 
-    // Send the blog data to the server
-    fetch('/submit', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(blogData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        // Redirect to the submissions page
-        window.location.href = '/submissions';
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+    // Redirect to the submissions page
+    window.location.href = 'blog.html';
 }
 
 // Add an event listener to the form submit button
 document.getElementById('submit').addEventListener('click', handleSubmit);
+
+console.log(username, title, content);
+
