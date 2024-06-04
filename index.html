@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal API Blog</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+    <h1>What's on your mind?</h1>
+
+    <form action="store.html" method="POST">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="content">Content</label><br>
+        <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/blog.js"></script>
+   
+</body>
+</html>
