@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #0f770a;
+    margin: 0;
+    padding: 0;
+}
+
+.form-title { 
+    font-weight: 400; 
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-label{
+    margin-bottom: -17px;
+    color: #fff;
+}
+
+.submit-btn {
+    background: #f657f6c4;
+    margin-bottom: 5px;
+}
+
+
+/* Dark Mode Style */
+.position-fixed.start-0 {
+    position: fixed;
+    top: 1rem;
+    left: 1rem; /* Align to the left */
+    z-index: 1050; /* Ensure it stays above other content */
+}
+
