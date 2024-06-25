@@ -6,28 +6,71 @@ body {
 }
 
 .form-title { 
-    font-weight: 400; 
-    margin: 20px;
+    font-weight: 600; 
+    font-size: 2em;
+    margin-top: 10px;
+    padding-bottom: 5px;
     color: #fff;
     text-align: center;
+    text-decoration: underline;
 }
 
 .form-label{
-    margin-bottom: -17px;
+    margin-bottom: -22px;
     color: #fff;
+    font-weight: 600;
 }
 
 .submit-btn {
-    background: #f657f6c4;
-    margin-bottom: 5px;
+    background: #0e6c0ef6;
+    color: #f5f9f5;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: large;
+}
+
+#username, #title, #content {
+    background: #d3e7d3f6;
+    border: 2px solid #0e6c0ef6;
 }
 
 
-/* Dark Mode Style */
-.position-fixed.start-0 {
-    position: fixed;
-    top: 1rem;
-    left: 1rem; /* Align to the left */
-    z-index: 1050; /* Ensure it stays above other content */
+/* Assuming there's a parent container with the class .parent-container */
+.parent-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically by default */
 }
+
+.dark-mode-icon {
+    width: 45vw; /* Adjust based on desired size */
+    height: auto; /* Maintain aspect ratio */
+    order: 1; /* Ensure icon is above form */
+    position: fixed; /* Keep if necessary for the default layout, but consider implications */
+}
+
+.container {
+    order: 2; /* Move form below icon */
+    width: 100%; /* Take up the whole page width */
+    height: auto;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+    .container {
+        order: 1; /* Move form above image */
+        width: 100%; /* Ensure it takes up the full width */
+    }
+
+    .dark-mode-icon {
+        order: 2; /* Move image below form */
+        position: relative; /* Remove fixed positioning to allow reordering */
+    }
+}
+
+
+
+
+
+
 
