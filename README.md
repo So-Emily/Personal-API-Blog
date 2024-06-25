@@ -1,6 +1,3 @@
-# Personal API Blog
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 ## Description
 This is an application for blogging. You can enter information for a blog post and it will save it and display it.
 
