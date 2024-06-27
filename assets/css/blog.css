@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;    
-    /* background: #e4aed3; */
+    background: #703d60;
     margin: 0;
     padding: 0;
 }
@@ -10,9 +10,9 @@ body {
     font-size: 2.5em;
     margin-top: 20px;
     padding-bottom: 20px;
-    color: #703d60;
+    color: #e4aed3;
     text-align: center;
-    text-shadow: 2px 2px 2px #ffffff;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .underline-text {
@@ -31,8 +31,8 @@ body {
 }
 
 .card-header {
-    color: white;
-    background-color: #703d60;
+    background-color: #e4aed3;
+    /* text-shadow: 2px 2px 2px #ffffff; */
 }
 
 .card-content {
@@ -41,6 +41,7 @@ body {
 
 .card-title {
     margin: 5px;
+    font-weight: 550;
 
 }
 
@@ -61,9 +62,10 @@ body {
     font-weight: 600;
     font-size: 1rem;
     border-width: 2px;
-    border-color: #703d60;
-    color: #703d60;
+    border-color: #000000;
+    color: #000000;
 }
+
 /* Dark Mode Img Styling */
 .dark-mode-icon, .light-mode-icon {
     width: auto; /* Adjust this value to make the image smaller or larger */
@@ -73,21 +75,11 @@ body {
 }
 
 .light-mode-icon {
-    max-width: 170px;
+    max-width: 200px;
     margin-top: 90%;
 }
 
 
 
-body.dark-mode {
-    background-color: #703d60; /* Bootstrap dark background color */
-    color: #ffffff;
-}
 
-body.dark-mode .card {
-    background-color: #e4aed3; /* Darker card backgrounds */
-    color: #000000;
-}
-
-/* Add more custom dark mode styles as needed */
 
