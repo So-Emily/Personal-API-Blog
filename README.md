@@ -8,6 +8,10 @@ This is an application for blogging. You can enter information for a blog post a
 - [License](#license)
 - [Questions](#questions)
 
+![website-form](https://github.com/So-Emily/Personal-API-Blog/assets/10500315/876d4714-94d2-4694-a706-d822ca0cea09)
+
+![website-blog](https://github.com/So-Emily/Personal-API-Blog/assets/10500315/85f80ae5-e76d-4aa9-88f0-35fbd3297f32)
+
 ## Deploying
 This program can be launched through the github live page.
 
