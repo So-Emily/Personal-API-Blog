@@ -8,7 +8,8 @@ body {
 .form-title { 
     font-weight: 600; 
     font-size: 2em;
-    margin-top: 10px;
+    margin-top: 15%;
+    margin-bottom: 20px;
     padding-bottom: 5px;
     color: #fff;
     text-align: center;
@@ -34,11 +35,17 @@ body {
     border: 2px solid #0e6c0ef6;
 }
 
-
 /* Assuming there's a parent container with the class .parent-container */
 .parent-container {
     display: flex;
     flex-direction: column; /* Stack children vertically by default */
+}
+
+.container {
+    order: 2; /* Move form below icon */
+    width: 100%; /* Take up the whole page width */
+    height: auto;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .dark-mode-icon {
@@ -48,12 +55,24 @@ body {
     position: fixed; /* Keep if necessary for the default layout, but consider implications */
 }
 
-.container {
-    order: 2; /* Move form below icon */
-    width: 100%; /* Take up the whole page width */
-    height: auto;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+
+/* Back Button Styles */
+.blog-button {
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-width: 2px;
+    color: #0f770a; /* Text color */
+    border-color: #0f770a;
 }
+
+.btn-outline-light:hover {
+    background-color: #0f770a; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
 
 /* Media query for smaller screens */
 @media screen and (max-width: 700px) {
