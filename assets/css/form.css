@@ -35,10 +35,11 @@ body {
     border: 2px solid #0e6c0ef6;
 }
 
-/* Assuming there's a parent container with the class .parent-container */
-.parent-container {
+.parent-container { /* Replace .parent-container with the actual class or ID of the parent */
     display: flex;
-    flex-direction: column; /* Stack children vertically by default */
+    flex-direction: row; /* Align children (icon and form) in a row */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
 }
 
 .container {
@@ -48,13 +49,19 @@ body {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-.dark-mode-icon {
+.dark-mode-icon, .light-mode-icon {
     width: 45vw; /* Adjust based on desired size */
     height: auto; /* Maintain aspect ratio */
     order: 1; /* Ensure icon is above form */
-    position: fixed; /* Keep if necessary for the default layout, but consider implications */
+    position: fixed;
 }
 
+/* Assuming the parent container of .light-mode-icon is styled with display: flex; */
+.light-mode-icon {
+    max-width: 750px;
+    padding-top: 7%;
+    padding-left: 6%;
+}
 
 /* Back Button Styles */
 .blog-button {
@@ -81,10 +88,12 @@ body {
         width: 100%; /* Ensure it takes up the full width */
     }
 
-    .dark-mode-icon {
+    .dark-mode-icon, .light-mode-icon {
         order: 2; /* Move image below form */
         position: relative; /* Remove fixed positioning to allow reordering */
     }
+
+    
 }
 
 

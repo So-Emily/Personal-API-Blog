@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;    
-    background: #e4aed3;
+    /* background: #e4aed3; */
     margin: 0;
     padding: 0;
 }
@@ -23,8 +23,10 @@ body {
 .card {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    margin: 20px;
-    margin-top: 4%;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 5%;
+    
     z-index: 1;
 }
 
@@ -63,17 +65,29 @@ body {
     color: #703d60;
 }
 /* Dark Mode Img Styling */
-.dark-mode-icon {
-    width: 100px; /* Adjust this value to make the image smaller or larger */
+.dark-mode-icon, .light-mode-icon {
+    width: auto; /* Adjust this value to make the image smaller or larger */
+    max-width: 250px;
     height: auto; /* This will maintain the aspect ratio of the image */
+    margin-top: 50%;
 }
 
-.dark-mode {
-    background-color: #333;
-    color: #fff;
+.light-mode-icon {
+    max-width: 170px;
+    margin-top: 90%;
 }
 
-.dark-mode .blog-title {
-    color: #ccc;
+
+
+body.dark-mode {
+    background-color: #703d60; /* Bootstrap dark background color */
+    color: #ffffff;
 }
+
+body.dark-mode .card {
+    background-color: #e4aed3; /* Darker card backgrounds */
+    color: #000000;
+}
+
+/* Add more custom dark mode styles as needed */
 
