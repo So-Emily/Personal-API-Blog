@@ -8,7 +8,7 @@ body {
 .form-title { 
     font-weight: 600; 
     font-size: 2em;
-    margin-top: 15%;
+
     margin-bottom: 20px;
     padding-bottom: 5px;
     color: #fff;
@@ -59,7 +59,7 @@ body {
 /* Assuming the parent container of .light-mode-icon is styled with display: flex; */
 .light-mode-icon {
     max-width: 750px;
-    padding-top: 7%;
+    padding-top: 2%;
     padding-left: 6%;
 }
 
