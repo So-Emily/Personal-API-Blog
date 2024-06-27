@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;    
-    background: #e4aed3;
+    background: #703d60;
     margin: 0;
     padding: 0;
 }
@@ -10,9 +10,9 @@ body {
     font-size: 2.5em;
     margin-top: 20px;
     padding-bottom: 20px;
-    color: #703d60;
+    color: #e4aed3;
     text-align: center;
-    text-shadow: 2px 2px 2px #ffffff;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .underline-text {
@@ -23,14 +23,16 @@ body {
 .card {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    margin: 20px;
-    margin-top: 4%;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 5%;
+    
     z-index: 1;
 }
 
 .card-header {
-    color: white;
-    background-color: #703d60;
+    background-color: #e4aed3;
+    /* text-shadow: 2px 2px 2px #ffffff; */
 }
 
 .card-content {
@@ -39,6 +41,7 @@ body {
 
 .card-title {
     margin: 5px;
+    font-weight: 550;
 
 }
 
@@ -59,21 +62,24 @@ body {
     font-weight: 600;
     font-size: 1rem;
     border-width: 2px;
-    border-color: #703d60;
-    color: #703d60;
+    border-color: #000000;
+    color: #000000;
 }
+
 /* Dark Mode Img Styling */
-.dark-mode-icon {
-    width: 100px; /* Adjust this value to make the image smaller or larger */
+.dark-mode-icon, .light-mode-icon {
+    width: auto; /* Adjust this value to make the image smaller or larger */
+    max-width: 250px;
     height: auto; /* This will maintain the aspect ratio of the image */
+    margin-top: 50%;
 }
 
-.dark-mode {
-    background-color: #333;
-    color: #fff;
+.light-mode-icon {
+    max-width: 200px;
+    margin-top: 90%;
 }
 
-.dark-mode .blog-title {
-    color: #ccc;
-}
+
+
+
 

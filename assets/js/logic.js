@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             formTitle.classList.replace('text-light', 'text-dark');
             formLabels.forEach(label => label.classList.replace('text-light', 'text-dark'));
             
-            //darkModeIcon.style.display = 'none';
+            // Change the image here
+            modeToggle.innerHTML = '<img src="./assets/images/light-mode-icon.png" class="light-mode-icon" alt="Light Mode">';
+            
         // Toggle light mode
         } else {
             body.classList.replace('bg-light', 'bg-dark');
@@ -27,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
             formTitle.classList.replace('text-dark', 'text-light');
             formLabels.forEach(label => label.classList.replace('text-dark', 'text-light'));
             
-            // darkModeIcon.style.display = 'none';
+            // Change the image here
+            modeToggle.innerHTML = '<img src="./assets/images/dark-mode-icon.png" class="dark-mode-icon" alt="Dark Mode">';
         }
     });
 });
-
-
